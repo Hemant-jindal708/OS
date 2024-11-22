@@ -58,14 +58,18 @@ void rr(vector<Process> process, int timeQuantam)
 int main()
 {
     vector<Process> Process;
-    struct Process process[3];
-    process[0].arival = 2;
-    process[1].arival = 3;
-    process[2].arival = 4;
-    process[0].burst = 2;
+    struct Process process[5];
+    process[0].arival = 0;
+    process[1].arival = 1;
+    process[2].arival = 2;
+    process[3].arival = 3;
+    process[4].arival = 4;
+    process[0].burst = 5;
     process[1].burst = 3;
-    process[2].burst = 6;
-    for (int i = 0; i < 3; i++)
+    process[2].burst = 1;
+    process[3].burst = 2;
+    process[4].burst = 3;
+    for (int i = 0; i < 5; i++)
     {
         Process.push_back(process[i]);
     }
